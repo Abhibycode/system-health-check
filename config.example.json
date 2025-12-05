@@ -1,0 +1,23 @@
+{
+  "report_dir": "sample_reports",
+  "thresholds": {
+    "cpu_percent": 85,
+    "memory_percent": 80,
+    "disk_percent": 90,
+    "top_process_count": 5
+  },
+  "email_alert": {
+    "enabled": false,
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 587,
+    "smtp_user": "you@example.com",
+    "smtp_password": "yourpassword",
+    "from": "health-check@example.com",
+    "to": ["ops@example.com"]
+  },
+  "webhook_alert": {
+    "enabled": false,
+    "url": "https://hooks.example.com/services/XXXXXXXX"
+  },
+  "services_to_check": ["nginx", "postgres", "docker"]
+}
