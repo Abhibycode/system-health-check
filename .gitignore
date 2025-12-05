@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Logs & reports
+*.log
+sample_reports/
+*.json
+
+# OS
+.DS_Store
