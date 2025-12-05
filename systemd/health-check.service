@@ -1,0 +1,9 @@
+[Unit]
+Description=System Health Check
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/system-health-check
+ExecStart=/opt/system-health-check/.venv/bin/python /opt/system-health-check/health_check.py --config /opt/system-health-check/config.json
+User=root
