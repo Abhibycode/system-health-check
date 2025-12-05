@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  health-check:
+    build: ./docker
+    volumes:
+      - ./sample_reports:/app/sample_reports
+      - ./config.json:/app/config.json:ro
+    restart: "no"
