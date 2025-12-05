@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-05T06:30:00Z",
+  "hostname": "ubuntu-server-01",
+  "cpu_percent": 12.3,
+  "memory": {
+    "percent": 45.7,
+    "total_bytes": 16777216000,
+    "available_bytes": 9059691008
+  },
+  "disk": [
+    {
+      "mountpoint": "/",
+      "fstype": "ext4",
+      "total": 499963174912,
+      "used": 210000000000,
+      "free": 289963174912,
+      "percent": 42.0
+    }
+  ],
+  "top_processes": [
+    {
+      "pid": 1234,
+      "name": "python3",
+      "username": "ubuntu",
+      "cpu_percent": 4.2,
+      "memory_percent": 1.1
+    }
+  ],
+  "network": {
+    "bytes_sent": 123456789,
+    "bytes_recv": 987654321,
+    "packets_sent": 123456,
+    "packets_recv": 654321
+  ],
+  "services": {
+    "nginx": "running",
+    "postgres": "running",
+    "docker": "running"
+  }
+}
